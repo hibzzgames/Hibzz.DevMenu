@@ -1,0 +1,14 @@
+{
+  "name": "com.hibzz.devmenu",
+  "version": "0.1.0",
+  "displayName": "hibzz.devmenu",
+  "description": "A tool used to add custom commands to a developer menu for quick testing and debugging",
+  "author": {
+    "name": "Hibzz Games",
+    "email": "support@hibzz.games",
+    "url": "https://hibzz.games/"
+  },
+  "documentationUrl": "https://github.com/Hibzz-Games/Hibzz.DevMenu/blob/main/README.md",
+  "changelogUrl": "https://github.com/Hibzz-Games/Hibzz.DevMenu/commits/",
+  "licensesUrl": "https://github.com/Hibzz-Games/Hibzz.DevMenu/blob/main/LICENSE.md"
+}
