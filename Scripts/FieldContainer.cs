@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Hibzz.DevMenu
@@ -18,6 +19,12 @@ namespace Hibzz.DevMenu
 
 			// initialize by keeping it closed
 			Close();
+
+			// add some code to unfocus from GUI on click of the confirm button
+			ConfirmButton.onClick.AddListener(() => 
+			{
+				EventSystem.current.SetSelectedGameObject(null);
+			});
 		}
 
 		// close the fields
