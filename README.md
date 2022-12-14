@@ -3,6 +3,8 @@
 
 ***A tool used to add custom commands to a developer menu for quick testing and debugging***
 
+<img src="https://user-images.githubusercontent.com/37605842/207492699-a693aaed-2001-472b-ba25-3a73cd92b3af.png" width="960"></img>
+
 ## Installation
 **Via Github**
 This package can be installed in the Unity Package Manager using the following git URL.
@@ -74,6 +76,9 @@ healthCard.OnApply = () =>
     // some code to set the health of the player in the given time goes here
 }
 ```
+
+## API Reference
+For more details on what's possible, here's the link to the [API reference](https://github.com/Hibzz-Games/Hibzz.DevMenu/wiki/API-Reference).
 
 ## Conclusion
 That's all for now and I hope you find this tool useful. It's pretty flexible and can be used anywhere in your script to dynamically add commands and remove them depending on context. If you have any suggestions or feedback, feel free to open an issue or contact me on [Twitter](https://twitter.com/hibzzgames) or [Discord](https://discord.gg/tZdZFK7).
