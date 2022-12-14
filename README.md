@@ -12,3 +12,68 @@ https://github.com/Hibzz-Games/Hibzz.DevMenu.git
 
 Alternatively, you can download the latest release from the [releases page](https://github.com/Hibzz-Games/Hibzz.DevMenu/releases) and manually import the package into your project.
 
+## How to access?
+The DevMenu is a singleton that can be accessed from anywhere in your project. By the default, the DevMenu is hidden and you must open it by manually from somewhere in your project. The DevMenu can be opened by calling the `DevMenu.Open()` method and closed by calling the `DevMenu.Close()` method.
+
+```csharp
+using Hibzz.DevMenu;
+
+// in update
+if(Input.GetKeyDown(KeyCode.BackQuote))
+{
+    if(DevMenu.IsOpen) 
+    { 
+        DevMenu.Close(); 
+    }
+    else 
+    { 
+        DevMenu.Open();
+    }
+}
+```
+
+## How to add commands?
+The DevMenu uses a card system to display commands. Each card can have a title and the action to be performed when the card is clicked. The DevMenu can be populated with cards by calling the `DevMenu.Add(string title)` function. This function returns a card object which can be used to add the callback function to be called when the card is clicked.
+
+```csharp
+// create the card
+Card invincibleCard = DevMenu.Add("Invincible");
+
+// add the callback
+invincibleCard.OnApply = () =>
+{
+    // invincible code goes here
+}
+```
+
+## How to add fields to a card?
+The DevMenu also supports adding fields to a card. This can be used to get input from the user and to use that input in the callback function. A card can be populated with fields by calling the `Card.Add<T>(string title)` function where `T` is the type of the field. The DevMenu currently supports the following field types and more will be added in the future (feel free to suggest more field types if you have a use case for them).
+
+- int
+- float
+- string
+- bool
+- enum (any enum type works!)
+
+Here's an example of how to add a field to a card and access the value of the field in the callback function:
+```csharp
+// create the card
+Card healthCard = DevMenu.Add("Set Health");
+
+// add the fields
+healthCard.Add<int>("Health");
+healthCard.Add<float>("TimeToHeal");
+
+// add the callback
+healthCard.OnApply = () =>
+{
+    // get the values of the fields
+    int health = (int) healthCard.fields["Health"];
+    float timeToHeal = (float) healthCard.fields["TimeToHeal"];
+
+    // some code to set the health of the player in the given time goes here
+}
+```
+
+## Conclusion
+That's all for now and I hope you find this tool useful. It's pretty flexible and can be used anywhere in your script to dynamically add commands and remove them depending on context. If you have any suggestions or feedback, feel free to open an issue or contact me on [Twitter](https://twitter.com/hibzzgames) or [Discord](https://discord.gg/tZdZFK7).

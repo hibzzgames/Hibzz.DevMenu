@@ -15,7 +15,7 @@ namespace Hibzz.DevMenu
 		/// <summary>
 		/// A reference to all the fields that were added to this card
 		/// </summary>
-		public Fields fields;
+		protected Fields fields;
 
 		/// <summary>
 		/// The title of the card
@@ -92,6 +92,17 @@ namespace Hibzz.DevMenu
 		public void Add<T>(string fieldname)
 		{
 			fields.Add<T>(fieldname, fieldContainer);
+		}
+
+		/// <summary>
+		/// Get the value from an added field
+		/// </summary>
+		/// <typeparam name="T">The type to cast the field value to</typeparam>
+		/// <param name="fieldname">The name of the field to get from</param>
+		/// <returns>The value from the requested field</returns>
+		public T Get<T>(string fieldname)
+		{
+			return (T) fields[fieldname];
 		}
 
 		// initialize the card
