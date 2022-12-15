@@ -70,8 +70,8 @@ healthCard.Add<float>("TimeToHeal");
 healthCard.OnApply = () =>
 {
     // get the values of the fields
-    int health = (int) healthCard.fields["Health"];
-    float timeToHeal = (float) healthCard.fields["TimeToHeal"];
+    int health = healthCard.Get<int>("Health");
+    float timeToHeal = healthCard.Get<float>("TimeToHeal");
 
     // some code to set the health of the player in the given time goes here
 }
