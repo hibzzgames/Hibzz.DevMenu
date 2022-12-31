@@ -1,6 +1,6 @@
 {
   "name": "com.hibzz.devmenu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "hibzz.devmenu",
   "description": "A tool used to add custom commands to a developer menu for quick testing and debugging",
   "author": {
