@@ -20,7 +20,6 @@
 //               USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 using Hibzz.DevMenu;
-using UnityEditor;
 using UnityEngine;
 
 namespace Hibzz.Core.Singletons
@@ -49,11 +48,9 @@ namespace Hibzz.Core.Singletons
 				// dev menu is a special case
 				if(typeof(T) == typeof(DevMenu.DevMenu))
 				{
-					var prefab = AssetDatabase.LoadAssetAtPath(
-						"Packages/com.hibzz.devmenu/Prefabs/DevMenu.prefab",
-						typeof(GameObject));
-
-					var devmenuObj = Instantiate(prefab) as GameObject;
+					var prefab = Resources.Load<GameObject>("Prefabs/DevMenu");
+					
+					var devmenuObj = Instantiate(prefab);
 					devmenuObj.SetActive(false);
 					return devmenuObj.GetComponent<T>();
 				}
