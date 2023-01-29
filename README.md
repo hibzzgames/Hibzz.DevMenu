@@ -12,7 +12,15 @@ This package can be installed in the Unity Package Manager using the following g
 https://github.com/Hibzz-Games/Hibzz.DevMenu.git
 ```
 
-Alternatively, you can download the latest release from the [releases page](https://github.com/Hibzz-Games/Hibzz.DevMenu/releases) and manually import the package into your project.
+The package manager unfortunately doesn't support dependencies automatically. Hopefully 2023 is the year that Unity fixes this. So, until then, you will have to install the following packages manually:
+
+```
+https://github.com/Hibzz-Games/Hibzz.Singletons.git
+```
+
+<br>
+
+Alternatively, you can download the latest release from the [releases page](https://github.com/Hibzz-Games/Hibzz.DevMenu/releases) and manually import the package into your project. The dependencies will also have to be imported manually from the respective releases page.
 
 ## How to access?
 The DevMenu is a singleton that can be accessed from anywhere in your project. By the default, the DevMenu is hidden and you must manually open it from somewhere in your project. The DevMenu can be opened by calling the `DevMenu.Open()` method and closed by calling the `DevMenu.Close()` method.
