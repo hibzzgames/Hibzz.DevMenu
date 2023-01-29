@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Hibzz.Core.Singletons;
+using Hibzz.Singletons;
 
 namespace Hibzz.DevMenu
 {
@@ -19,6 +19,18 @@ namespace Hibzz.DevMenu
 
 		// is the developer menu open?
 		protected bool p_isOpen = false;
+
+		// modified function that determines how to instantiate a devmenu into the scene
+		protected static new DevMenu CreateNewInstance()
+		{
+			// load and instantiat the prefab
+			var prefab = Resources.Load<GameObject>("Prefabs/DevMenu");
+			var menu   = Instantiate(prefab);
+
+			// de-activate it, so that it's hidden on start
+			menu.SetActive(false);
+			return menu.GetComponent<DevMenu>();
+		}
 
 		// interact with the developer  menu
 		protected void p_open(bool open)

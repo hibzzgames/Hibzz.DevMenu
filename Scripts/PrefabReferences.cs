@@ -1,10 +1,9 @@
-using Hibzz.Core.Singletons;
+using Hibzz.Singletons;
 using UnityEngine;
 
 namespace Hibzz.DevMenu
 {
-	[AddComponentMenu("Dev Menu/Prefab References")]
-	public class PrefabReferences : Singleton<PrefabReferences>
+	public class PrefabReferences : ScriptableSingleton<PrefabReferences>
 	{
 		public GameObject CardPrefab;
 		public GameObject FieldContainerPrefab;

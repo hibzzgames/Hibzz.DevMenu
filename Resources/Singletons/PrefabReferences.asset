@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae624a6315cb0b24a855328e064b80cd, type: 3}
+  m_Name: PrefabReferences
+  m_EditorClassIdentifier: 
+  CardPrefab: {fileID: 7138963974144900110, guid: 3b6099b8bc4866c468ebca2fc0520e2f, type: 3}
+  FieldContainerPrefab: {fileID: 2610488691815020841, guid: bcfb6f5aa2931f34ab05a71f44a97471, type: 3}
+  TextFieldPrefab: {fileID: 5653084808769410425, guid: c3e42c2c4b02b0b439ce02cdc33ce8a4, type: 3}
+  FloatFieldPrefab: {fileID: 5653084808769410425, guid: 4dc954e0f7399d3409c2bd4be5e3c69a, type: 3}
+  IntFieldPrefab: {fileID: 5653084808769410425, guid: 21534268e7a105a4596668e7b30338e8, type: 3}
+  EnumFieldPrefab: {fileID: 6103436053214085363, guid: faf40eb061cf21a4c9139f7b40ff7a80, type: 3}
+  ToggleFieldPrefab: {fileID: 2746200604033265386, guid: 9d5cd4ea54b2f0c40baeba1b53f17ee1, type: 3}
