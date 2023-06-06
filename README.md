@@ -9,16 +9,16 @@
 **Via Github**
 This package can be installed in the Unity Package Manager using the following git URL.
 ```
-https://github.com/Hibzz-Games/Hibzz.DevMenu.git
+https://github.com/hibzzgames/Hibzz.DevMenu.git
 ```
 
-Alternatively, you can download the latest release from the [releases page](https://github.com/Hibzz-Games/Hibzz.DevMenu/releases) and manually import the package into your project. The dependencies will also have to be imported manually from the respective releases page.
+Alternatively, you can download the latest release from the [releases page](https://github.com/hibzzgames/Hibzz.DevMenu/releases) and manually import the package into your project. The dependencies will also have to be imported manually from the respective releases page.
 
 ### Dependencies
 The package manager unfortunately doesn't support dependencies automatically. Hopefully 2023 is the year that Unity fixes this. So, until then, you will have to install the following packages manually:
 
 ```
-https://github.com/Hibzz-Games/Hibzz.Singletons.git
+https://github.com/hibzzgames/Hibzz.Singletons.git
 ```
 
 
@@ -86,7 +86,7 @@ healthCard.OnApply = () =>
 ```
 
 ## API Reference
-For more details on what's possible, here's the link to the [API reference](https://github.com/Hibzz-Games/Hibzz.DevMenu/wiki/API-Reference).
+For more details on what's possible, here's the link to the [API reference](https://github.com/hibzzgames/Hibzz.DevMenu/wiki/API-Reference).
 
 ## Conclusion
 That's all for now and I hope you find this tool useful. It's pretty flexible and can be used anywhere in your script to dynamically add commands and remove them depending on context.

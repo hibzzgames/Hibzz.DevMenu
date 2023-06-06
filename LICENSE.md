@@ -1,4 +1,4 @@
-[Hibzz DevMenu](https://github.com/Hibzz-Games/Hibzz.DevMenu) © 2022 by [Hibzz Games](hibzz.games) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+[Hibzz DevMenu](https://github.com/hibzzgames/Hibzz.DevMenu) © 2022 by [Hibzz Games](hibzz.games) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ```
 Creative Commons Corporation ("Creative Commons") is not a law firm and
